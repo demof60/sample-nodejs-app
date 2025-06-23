@@ -2,11 +2,7 @@ pipeline {
     agent any
 
     triggers {
-        githubPush() // Trigger build on push to GitHub
-    }
-
-    tools {
-        nodejs 'NodeJS 18' // Ensure Node.js is configured in Jenkins Global Tools
+        githubPush()
     }
 
     stages {
