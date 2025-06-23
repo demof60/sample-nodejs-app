@@ -12,7 +12,7 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                git 'https://github.com/demof60/sample-nodejs-app.git', branch: 'main'
+                git url: 'https://github.com/demof60/sample-nodejs-app.git', branch: 'main'
             }
         }
 
